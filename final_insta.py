@@ -23,7 +23,7 @@ def get_sheet_links(sheet_path, spreadsheet_name, worksheet_name=None):
         sheet = spreadsheet.sheet1
     # Assumes the column is named 'Links'
     links_col = sheet.find('Links').col
-    comment_count_col = sheet.find('Comment Count').col
+    comment_count_col = sheet.find('Actual Comment Count (Automation)').col
     links = sheet.col_values(links_col)[1:]  # skip header
     return sheet, links, links_col, comment_count_col
  
