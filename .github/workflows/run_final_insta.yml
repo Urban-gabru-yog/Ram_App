@@ -2,8 +2,7 @@ name: Run Instagram Comment Count Script
 
 on:
   schedule:
-    - cron: '30 5 * * *'  # Runs at 11:00 AM IST
-    - cron: '30 11 * * *'  # Runs at 5:00 PM IST
+    - cron: '0 */2 * * *'  # Runs every 2 hours
   workflow_dispatch:  # Allows manual run
 
 jobs:
